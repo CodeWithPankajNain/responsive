@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
+    color:white;
+}
+
+.hero{
+    text-align:center;
+    max-width:700px;
+    padding:20px;
+}
+
+.hero h3{
+    color:#38bdf8;
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.hero h1{
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.hero h2{
+    font-size:35px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.roles{
+    position:relative;
+    width:220px;
+    height:42px;
+    overflow:hidden;
+    border: 3px solid white;
+}
+
+.roles span{
+    position:absolute;
+    width:100%;
+    left:0;
+    color:#38bdf8;
+    opacity:0;
+    /* animation:change 12s infinite; */
+}
+
+.roles span:nth-child(1){animation-delay:0s;}
+.roles span:nth-child(2){animation-delay:3s;}
+.roles span:nth-child(3){animation-delay:6s;}
+.roles span:nth-child(4){animation-delay:9s;}
+
+@keyframes change{
+
+0%{
+opacity:0;
+transform:translateY(30px);
+}
+
+10%,25%{
+opacity:1;
+transform:translateY(0);
+}
+
+35%{
+opacity:0;
+transform:translateY(-30px);
+}
+
+100%{
+opacity:0;
+}
+
+}
+
+.cursor{
+    color:#38bdf8;
+    animation:blink .8s infinite;
+}
+
+@keyframes blink{
+50%{
+opacity:0;
+}
+}
+
+.hero p{
+    margin:30px 0;
+    line-height:1.8;
+    color:#d1d5db;
+    font-size:18px;
+}
+
+.buttons{
+    margin-top:20px;
+}
+
+.buttons a{
+    display:inline-block;
+    margin:10px;
+    padding:14px 35px;
+    text-decoration:none;
+    color:white;
+    background:#0ea5e9;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.buttons a:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px #0ea5e9;
+}
+
+.buttons .cv{
+    background:transparent;
+    border:2px solid #0ea5e9;
+}
+
+.buttons .cv:hover{
+    background:#0ea5e9;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:45px;
+}
+
+.hero h2{
+font-size:25px;
+}
+
+.roles{
+width:170px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<section class="hero">
+
+<h3>👋 Hello, I'm</h3>
+
+<h1>John Smith</h1>
+
+<h2>
+I am a
+<div class="roles">
+<span>Designer</span>
+<span>Web Developer</span>
+<span>YouTuber</span>
+<span>Freelancer</span>
+</div>
+<span class="cursor">|</span>
+</h2>
+
+<p>
+I build beautiful, responsive websites and create modern user experiences.
+I also love sharing coding tutorials and web development tips on YouTube.
+</p>
+
+<div class="buttons">
+<a href="#">Hire Me</a>
+<a href="#" class="cv">Download CV</a>
+</div>
+
+</section>
+
+</body>
+</html>
