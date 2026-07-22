@@ -159,56 +159,71 @@ input:focus {
   box-shadow: none;
 }
 
+.started-button *{
+    transition:all 0.6s ease;
+    cursor: pointer;
+}
+.started-button *:hover{
+    transform: translateY(-5px);
+    background-color: gray;
+}
+
+.learn{
+    background-color: oklch(0.49 0.13 264.81);
+    color:white;
+    text-shadow: 1px 2px 3px rgb(0, 0, 0);
+    transition: all 0.9s ease;
+}
+
+.learn:hover{
+    transform: translateX(10px) ;
+
+}
+
+.standing{
+    filter: saturate(2);
+}
+#services .teach{
+    background-color: grey;
+}
 </style>
 
 <body>
-     <nav class="flex flex-col ">
+        <nav class="flex flex-col ">
         <ul
-            class="items h-18 w-full bg-sky-600 capitalize flex justify-center items-center gap-6 text-[18px] font-semibold">
+            class="items h-16 w-full bg-sky-600 capitalize flex justify-center items-center gap-6 text-[18px] font-semibold fixed z-3">
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
-            <li>About Us</li>
+            <li><a href="#about" >About Us</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li>FAQ</li>
             <li><a href="#footer">Footer</a></li>
         </ul> 
-        <div id="home" class="pp h-[100vh] w-full  bg-cover bg-center bg-no-repeat object-cover bg-[url('boad.jpg')]">
-         
-            <h1 class="w-[90vh] border">Grow Your Business with Smart Digital Solutions</h1>
-            <p>We create modern websites, mobile applications, digital marketing strategies, and creative designs that help businesses grow online.</p>
+        
+        <hr class="h-2">
+        <div id="home" class="pp h-[100vh] w-full  bg-cover bg-center bg-no-repeat object-cover bg-[url('forest.jpg')] flex flex-col justify-evenly items-center ">
+         <div class="mini-home h-[60vh] border  w-[85vw]  flex flex-col justify-evenly items-center  ">
 
-            <div class="started-button">
-                <button>Primary Button</button>
-                <button>Secondary Button</button>
+       
+            <h1 class=" h-24 w-[35vw] text-[30px] font-semibold text-center  text-white border sm:w-[80vw] sm:h-28 sm:text-[35px]  ">Grow Your Business with Smart Digital Solutions</h1>
+            <p class="h-16 w-[40vw] font-semibold text-center border text-white sm:w-[75vw] sm:h-[25vh] sm:text-[16px] ">We create modern websites, mobile applications, digital marketing strategies, and creative designs that help businesses grow online.</p>
+
+            <div class="started-button border h-16 w-[50vw]  flex justify-center items-center gap-4">
+                <button class="h-12 w-40 border font-semibold text-[20px] rounded-sm text-white sm:w-[60vw] sm:text-[18px]">Learn More</button>
+                <button class=" h-12 w-40 border font-semibold text-[20px] rounded-sm text-white sm:w-[60vw] sm:text-[18px]">Explore</button>
             </div>
+        </div>
 
-
-            <!-- Heading:
-
-
-
-Subheading:
-
-
-
-:
-
-Get Started
-
-:
-
-Learn More -->
               
         </div>
-    </nav>     
-<!-- <hr class="h-2">
+    </nav>      
+ <hr class="h-2">
   <div id="services" class="services h-[100vh] bg-cover bg-center object-cover bg-[url('road.png')]  bg-no-repeat  w-full  flex flex-col gap-2">
  <div class="ser-heading h-24  flex justify-center items-center">
     <h1 class="text-[34px] font-semibold  opacity-50 text-white cursor-pointer hover:opacity-10">Our Services</h1>
  </div>
 
- <div class="components h-[60vh]  flex justify-evenly items-center">
-      <div class="teach teach-1 flex flex-col justify-evenly items-center cursor-pointer ">
+ <div class="components h-[60vh]  flex justify-evenly items-center sm:grid sm:grid-cols-2 ">
+      <div class="teach teach-1 flex flex-col justify-evenly items-center cursor-pointer sm:w-[55vw] ">
         <div class="teach-top-1 h-16 w-16 border border-white bg-transparent  rounded-[50%] flex justify-center items-center">
          
             <img src="computer.svg" alt="" style="height: 50px; width: 50px;">
@@ -253,23 +268,41 @@ Learn More -->
         <h1 class="h-12  font-semibold text-[24px]">Graphics Designing</h1>
  
         <p class=" h-24 overflow-hidden w-80  text-[15px]">Graphic designing creates attractive visual content using colors, typography, images, and layouts for effective communication.
-</p>
+        </p>
+        
+    </div>
+    
+</div>
 
-      </div>
+</div>  
+
+
+<hr class="h-3">
+<div id="about" class="about-us h-[100vh] w-full bg-cover bg-center bg-no-repeat object-cover   bg-[url('river-2.jpg')] flex justify-around items-center">
+    <div class="mini-about-1 h-[50vh] ml-3 w-[50vw]    flex flex-col justify-evenly  items-center">
+        <div class="about-heading h-28 w-80 ">
+            <h1 class="text-[60px] font-bold uppercase text-white"> About Us</h1>
+            <hr class=" w-40 text-white">
+        </div>
+        <p class="h-36 w-[40vw] p-12 text-[22px]  text-white" style="padding: 18px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maxime harum ex atque officiis perferendis magni ducimus alias nemo quo.</p>
+
+        <button class="learn cursor-pointer h-12 w-40 self-center  rounded-[23px]">Learn More <span><img class="inline" src="arrow.svg" alt=""></span></button>
+
+    </div>
      
- </div>
+</div>   
 
- </div>  
+ 
 
-
+ <hr class="h-3">
  <div id="contact" class="contact h-[100vh] w-full bg-cover bg-center object-cover bg-[url('contact-form-img.jpg')]  flex justify-evenly  items-center ">
     <div class="contact-sub h-[80vh] w-[40vw]  flex justify-evenly items-center flex-col border-8 ">
         <div class="contact-1 h-52  w-[30vw] flex flex-col justify-evenly items-center">
             <h1 class="w-64 h-16 text-center   text-white font-bold text-[40px]">Contact Us</h1>
             <p  class="w-[25vw] h-24  text-white text-center text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum reprehenderit tempore eos, voluptatem architecto ipsam.</p>
         </div>
-   
-
+        
+        <hr class="h-3">
     <div class="contact-form h-80 w-[30vw]  flex justify-evenly items-center flex-col ">
         <div class="first-fill h-16 w-96  flex flex-col justify-evenly ">
             <form action="">
@@ -283,7 +316,7 @@ Learn More -->
         </div>
 
         <div class="second-fill h-16 w-96  flex flex-col justify-evenly ">
-            <div class="ll flex">
+            <div class=" flex">
 
                 <input type="password" name="" id="" class="password h-10 pl-2 w-80  text-white font-bold" placeholder="Your Password" required>
                 <img class=" inline relative top-2 cursor-pointer  eye" src="close.svg" alt="" style="height: 25px; width: 25px;">
@@ -302,11 +335,10 @@ Learn More -->
     </div>
 </div>
 
-</div>
+</div> 
     
- 
 
- 
+
  <div id="footer" class="footer h-[45vh] w-full  ">
      <div class="child child-1 flex flex-col gap-2 ">
          <div class="img-1 flex gap-x-2">
@@ -400,12 +432,9 @@ Learn More -->
         <hr class="text-white"> 
         <div class="copyright h-12  bg-black flex justify-center  items-center ">
             <p class=" text-center pt-3 text-white">Copyright © 2026 | All Rights Reserved by <span class="font-semibold text-white">DigitalGrowTeam</span></p>
-        </div>     -->
-        
-   
+        </div>     
 
-        
-        
+
 
     </body>
     
