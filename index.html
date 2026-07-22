@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Monomakh&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Neucha&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SN+Pro:ital,wght@0,200..900;1,200..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <script src="script.js"></script>
 </head>
 <style>
 
@@ -116,7 +117,7 @@ nav li {
     /* background-color: rgba(255, 255, 255,0.78); */
     background-color:gray;
     border-radius: 4px;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
 
 }
 .teach h1,.teach p{
@@ -161,7 +162,7 @@ input:focus {
 </style>
 
 <body>
-     <!-- <nav class="flex flex-col ">
+     <nav class="flex flex-col ">
         <ul
             class="items h-18 w-full bg-sky-600 capitalize flex justify-center items-center gap-6 text-[18px] font-semibold">
             <li><a href="#home">Home</a></li>
@@ -172,17 +173,42 @@ input:focus {
             <li><a href="#footer">Footer</a></li>
         </ul> 
         <div id="home" class="pp h-[100vh] w-full  bg-cover bg-center bg-no-repeat object-cover bg-[url('boad.jpg')]">
+         
+            <h1 class="w-[90vh] border">Grow Your Business with Smart Digital Solutions</h1>
+            <p>We create modern websites, mobile applications, digital marketing strategies, and creative designs that help businesses grow online.</p>
+
+            <div class="started-button">
+                <button>Primary Button</button>
+                <button>Secondary Button</button>
+            </div>
+
+
+            <!-- Heading:
+
+
+
+Subheading:
+
+
+
+:
+
+Get Started
+
+:
+
+Learn More -->
               
         </div>
     </nav>     
-<hr class="h-2">
+<!-- <hr class="h-2">
   <div id="services" class="services h-[100vh] bg-cover bg-center object-cover bg-[url('road.png')]  bg-no-repeat  w-full  flex flex-col gap-2">
  <div class="ser-heading h-24  flex justify-center items-center">
     <h1 class="text-[34px] font-semibold  opacity-50 text-white cursor-pointer hover:opacity-10">Our Services</h1>
  </div>
 
  <div class="components h-[60vh]  flex justify-evenly items-center">
-      <div class="teach teach-1 flex flex-col justify-evenly items-center ">
+      <div class="teach teach-1 flex flex-col justify-evenly items-center cursor-pointer ">
         <div class="teach-top-1 h-16 w-16 border border-white bg-transparent  rounded-[50%] flex justify-center items-center">
          
             <img src="computer.svg" alt="" style="height: 50px; width: 50px;">
@@ -195,7 +221,7 @@ input:focus {
 
       </div>
 
-      <div class="teach teach-2 flex flex-col justify-evenly items-center ">
+      <div class="teach teach-2 flex flex-col justify-evenly items-center cursor-pointer ">
         <div class="teach-top-2 h-16 w-16 border border-white bg-transparent  rounded-[50%] flex justify-center items-center">
          
             <img src="smartphone.svg" alt="" style="height: 50px; width: 50px;">
@@ -207,7 +233,7 @@ input:focus {
 
       </div>
 
-      <div class="teach teach-3 flex flex-col justify-evenly items-center ">
+      <div class="teach teach-3 flex flex-col justify-evenly items-center cursor-pointer">
         <div class="teach-top-3 h-16 w-16 border border-white bg-transparent  rounded-[50%] flex justify-center items-center">
          
             <img src="grow.svg" alt="" style="height: 50px; width: 50px;">
@@ -219,7 +245,7 @@ input:focus {
 
       </div>
 
-      <div class="teach teach-3 flex flex-col justify-evenly items-center ">
+      <div class="teach teach-3 flex flex-col justify-evenly items-center cursor-pointer">
         <div class="teach-top-3 h-16 w-16 border border-white bg-transparent  rounded-[50%] flex justify-center items-center">
          
             <img src="brush.svg" alt="" style="height: 50px; width: 50px;">
@@ -256,12 +282,21 @@ input:focus {
              <hr class="bg-sky-600 w-96 h-1">
         </div>
 
+        <div class="second-fill h-16 w-96  flex flex-col justify-evenly ">
+            <div class="ll flex">
+
+                <input type="password" name="" id="" class="password h-10 pl-2 w-80  text-white font-bold" placeholder="Your Password" required>
+                <img class=" inline relative top-2 cursor-pointer  eye" src="close.svg" alt="" style="height: 25px; width: 25px;">
+            </div>
+             <hr class="bg-sky-600 w-96 h-1">
+        </div>
+
         <div class="third-fill h-16 w-96  flex flex-col justify-evenly ">
              <input type="text" name="" id="" class=" h-10 pl-2 w-80   text-white font-bold" placeholder="Your Message" required>
              <hr class="bg-sky-600 w-96 h-1">
         </div>
    
-         <button type="submit" class="opacity-90 best uppercase font-semibold cursor-pointer border-white text-white h-10 w-32 border-2">submit <span><img  class="inline" src="arrow.svg" alt=""></span></button>
+         <button type="submit" class="opacity-90 best uppercase font-semibold cursor-pointer border-white text-white h-10 w-32 border-2 mt-3">submit <span><img  class="inline" src="arrow.svg" alt=""></span></button>
          
         </form>
     </div>
@@ -365,11 +400,12 @@ input:focus {
         <hr class="text-white"> 
         <div class="copyright h-12  bg-black flex justify-center  items-center ">
             <p class=" text-center pt-3 text-white">Copyright © 2026 | All Rights Reserved by <span class="font-semibold text-white">DigitalGrowTeam</span></p>
-        </div>    -->
+        </div>     -->
         
    
 
-        <img  class="myself" src="https://picsum.photos/1920/1080" alt="">
+        
+        
 
     </body>
     
